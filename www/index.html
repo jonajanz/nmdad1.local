@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NMDAD</title>
+  <link rel="stylesheet" href="styles/css/app.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+      <!-- NAVIGATION -->
+    <nav class="light-blue darken-4">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo">MediMapp</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="dokter"><a href="#md_dokter" class="waves-effect waves-dark">Dokter</a></li>
+            <li class="apotheker"><a href="#md_apotheker" class="waves-effect waves-dark">Apotheker</a></li>
+            <li class="fonds"><a href="#md_fonds" class="waves-effect waves-dark">Ziekenfonds</a></li>
+          </ul>
+          <ul id="slide-out" class="side-nav">
+            <li class="home"><a href="#/" class="waves-effect waves-dark">Home</a></li>
+            <li class="dokter"><a href="#md_dokter" class="waves-effect waves-dark">Dokter</a></li>
+            <li class="apotheker"><a href="#md_apotheker" class="waves-effect waves-dark">Apotheker</a></li>
+            <li class="fonds"><a href="#md_fonds" class="waves-effect waves-dark">Ziekenfonds</a></li>
+            <li class="fonds"><a href="#/disclaimer" class="waves-effect waves-dark">Disclaimer</a></li>
+          </ul>
+        </div>
+        <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+      <!-- -->
+  </header>
+  <main>
+    <!-- PRELOADER -->  
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- MAP PAGE -->  
+    <div class="page" id="search">
+      <div id="map"></div>
+      <ul class="collection">
+
+      </ul>
+    </div>
+    <!-- HOME PAGE-->
+    <div class="page" id="home">
+      <div class="container">
+        <div class="row">
+          <h1 class="header blue-grey-text text-darken-3 center-align">Welkom bij MediMapp</h1>
+          <h5 class="blue-text center-align text-darken-3 lighten-3">Naar wat ben je op zoek?</h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <a href="#md_dokter">
+              <div class="card-panel hoverable red darken-1">
+                <div>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                  <h3 class="white-text">Dokter</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col s12 m4">
+            <a href="#md_apotheker">
+              <div class="card-panel hoverable orange darken-1">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z" />
+                  </svg>
+                  <h3 class="white-text">Apotheker</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col s12 m4">
+            <a href="#md_fonds">
+              <div class="card-panel hoverable light-green darken-1 ">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7C15.12 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5C7.34 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"
+                    />
+                  </svg>
+                  <h3 class="white-text">Ziekenfonds</h3>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->  
+    <!-- DISCLAIMER PAGE-->
+    <div class="page" id="disclaimer">
+      <div class="container">
+        <h3 class="blue-text text-darken-3 lighten-3">Inhoud</h3>
+        <p> Alle inhoud en beelden op deze website dienen enkel en alleen als educatieve oefening voor het Opleidingsonderdeel NMDAD I van de opleiding Grafische en Digitale media van de Arteveldehogeschool. Via deze website wil de Arteveldehogeschool
+          correcte en actuele informatie verstrekken over haar opleidingen, vacatures, onderzoeksprojecten enzovoort.</p>
+        <p> De Arteveldehogeschool kan evenwel niet aansprakelijk gesteld worden voor foutieve of verouderde informatie. Heb je een vraag of opmerking over de inhoud van deze website? Mail naar <a href="mailto:webmaster@arteveldehs.be">webmaster@arteveldehs.be</a>.</p>
+        <h3 class="blue-text text-darken-3 lighten-3">Links</h3>
+        <p>De Arteveldehogeschool kan niet aansprakelijk gesteld worden voor enige schade die zou voortvloeien uit het doorklikken naar websites of andere informatiebronnen waarnaar de eigen website verwijst.</p>
+        <h3 class="blue-text text-darken-3 lighten-3">Intellectuele rechten</h3>
+        <p>De Arteveldehogeschool behoudt alle intellectuele rechten op de website en de hierop geplaatste informatie.</p>
+        <p>De informatie op de website mag gebruikt worden overeenkomstig de bepalingen van de Belgische auteurswetgeving.</p>
+        <h3 class="blue-text text-darken-3 lighten-3">Persoonsgegevens</h3>
+        <p>Persoonsgegevens die je invult op deze website worden bewaard door de Arteveldehogeschool. Ze dienen enkel om de door jou gevraagde informatie te verstrekken.</p>
+        <p>Overeenkomstig de wet betreffende de verwerking van persoonsgegevens heb je het recht je gegevens te raadplegen en zo nodig te verbeteren. Mail hiervoor naar <a href="mailto:webmaster@arteveldehs.be">webmaster@arteveldehs.be</a>.</p><br>
+      </div>
+    </div>
+    <!-- -->
+    <!-- modal structure DOKTER-->
+    <div id="md_dokter" class="modal">
+      <div class="modal-content">
+        <h4>Dokter</h4>
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Maak je keuze</option>
+            <option value="1">Man</option>
+            <option value="2">Vrouw</option>
+            <option value="3">Geen voorkeur</option>
+          </select>
+          <label>Ik prefereer een:</label>
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Vul je locatie in" id="location" type="text" class="validate">
+          <label for="location">Locatie:</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#/search/" class=" modal-action modal-close waves-effect waves-green btn-flat">Zoek</a>
+      </div>
+    </div>
+    <!-- -->
+    <!-- modal structure APOTHEKER-->
+    <div id="md_apotheker" class="modal">
+      <div class="modal-content">
+        <h4>Apotheker</h4>
+        <div class="input-field">
+          <input placeholder="Vul je locatie in" id="location" type="text" class="validate">
+          <label for="location">Locatie:</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#/search/" class=" modal-action modal-close waves-effect waves-green btn-flat">Zoek</a>
+      </div>
+    </div>
+    <!-- -->
+    <!-- modal structure ZIEKENFONDS-->
+    <div id="md_fonds" class="modal">
+      <div class="modal-content">
+        <h4>Ziekenfonds</h4>
+        <div class="input-field">
+          <input placeholder="Vul je locatie in" id="location" type="text" class="validate">
+          <label for="location">Locatie:</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#/search/" class=" modal-action modal-close waves-effect waves-green btn-flat">Zoek</a>
+      </div>
+    </div>
+    <!-- -->
+  </main>
+  <!-- FOOTER-->    
+  <footer class="page-footer light-blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">MediMapp</h5>
+          <p class="grey-text text-lighten-4">Deze webapp helpt je bij het vinden van de dichtsbijzijnde dokter, apotheker of ziekenfonds!</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2016-2017 MediMapp, All rights reserved.
+        <a class="grey-text text-lighten-4 right" href="#/disclaimer">Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+  <!-- -->
+  <!-- SCRIPTS-->    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-signals/1.0.0/js-signals.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hasher/1.2.0/hasher.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crossroads/0.12.2/crossroads.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWlFZnCo9VFWxy-3HVunDT984DqXoQQyg&libraries=geometry"></script>
+  <script src="js/app.js"></script>
+<!-- -->
+</body>
+
+</html>

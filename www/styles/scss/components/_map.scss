@@ -1,0 +1,37 @@
+// out: ../app.scss
+#map {
+  height: calc(100vh - 64px);
+  width: 70%;
+}
+
+main {
+  position: relative;
+}
+
+ul.collection {
+  position: absolute;
+  width: 30%;
+  margin-top: 0;
+  overflow: scroll;
+  height: calc(100vh - 64px);
+  top: 0;
+  right: 0;
+  li.collection-item {
+    cursor: pointer;
+    &.selected {
+      background: rgb(240, 240, 240);
+    }
+  }
+}
+
+@media (max-width:992px) {
+  #map {
+    height: 220px;
+    position: static;
+    width: 100%;
+  }
+  ul.collection {
+    width: 100%;
+    position: static;
+  }
+}

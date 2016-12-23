@@ -1,0 +1,27 @@
+// out: ../app.scss
+
+.modal {
+	overflow:scroll;
+
+	h4 {
+		margin-bottom:0;
+	}
+
+	.input-field {
+		padding: 1rem;
+		
+		label {
+			top:1.5rem;
+			left:1rem;
+		}
+		
+		.select-wrapper {
+			position:relative;
+			top:1.5rem;
+		}
+	}
+	
+	.modal-content {
+		padding-bottom:0;
+	}
+}
